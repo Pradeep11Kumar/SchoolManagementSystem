@@ -1,0 +1,26 @@
+﻿@using SchoolManagement.ViewModel.Subject
+@model List<SubjectViewModel>
+<div class="container">
+    <a class="btn btn-primary" asp-action="Create">Add New</a>
+    <table class="table table-striped">
+        <tr>
+            <th>Subject Id</th>
+            <th>Subject Name</th>
+            <th>Action</th>
+        </tr>
+        <tbody>
+            @foreach (var list in Model)
+            {
+                <tr>
+                    <td>@list.Id</td>
+                    <td>@list.SubjectName</td>
+                    <td>
+                        <a class="btn btn-info" asp-action="Edit" asp-controller="Subject" asp-route-subjectId="@list.Id">Edit</a>
+                        <a class="btn btn-danger" asp-action="Delete" asp-controller="Subject" asp-route-subjectId="@list.Id">Delete</a>
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

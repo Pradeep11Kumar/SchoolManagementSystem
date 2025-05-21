@@ -1,4 +1,6 @@
-﻿namespace SchoolManagement.Controllers.BaseEntity
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace SchoolManagement.Controllers.BaseEntity
 {
     public class BaseEntity
     {

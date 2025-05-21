@@ -1,0 +1,26 @@
+﻿@using SchoolManagement.ViewModel.GroupClass
+@model List<GroupClassViewModel>
+<div class="container">
+        <a class="btn btn-primary" asp-action="Create">Add New</a>
+    <table class="table table-striped">
+        <tr>
+            <th>Group Class Id</th>
+            <th>Group Class Name</th>
+            <th>Action</th>
+        </tr>
+        <tbody>
+            @foreach(var list in Model)
+            {
+            <tr>
+                    <td>@list.GroupId</td>
+                <td>@list.GroupClassName</td>
+                <td>
+                        <a class="btn btn-info" asp-action="Edit" asp-controller="GroupClass" asp-route-classId="@list.GroupId">Edit</a>
+                        <a class="btn btn-danger" asp-action="Delete" asp-controller="GroupClass" asp-route-classId="@list.GroupId">Delete</a>
+
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>

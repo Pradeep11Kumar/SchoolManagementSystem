@@ -1,0 +1,16 @@
+﻿@using SchoolManagement.ViewModel.GroupClass
+@model EditGroupClassViewModel
+<div class="container">
+    <form asp-action="Edit" method="post">
+    <div class="row">
+            <input hidden asp-for="GroupId" />
+        <div class=" mt-1">
+                <label for="YearLevelName"></label>
+            <input asp-for="StudentCreateGroupClass.GroupClassName" class="form-control"/>
+        </div>
+        <div class="mt-1">
+            <button class="btn btn-success" type="submit" value="submit">Save</button>
+        </div>
+    </div>
+    </form>
+</div>

@@ -1,0 +1,15 @@
+﻿@using SchoolManagement.ViewModel.GroupClass
+@model CreateGroupClassViewModel
+<div class="container">
+    <form asp-action="Create" method="post">
+    <div class="row">
+        <div class=" mt-1">
+                <label for="GroupClassName"></label>
+            <input asp-for="GroupClassName" class="form-control"/>
+        </div>
+        <div class="mt-1">
+            <button class="btn btn-success" type="submit" value="submit">Save</button>
+        </div>
+    </div>
+    </form>
+</div>

@@ -2,7 +2,7 @@
 
 namespace SchoolManagement.Models
 {
-    public class Class :BaseEntity
+    public class GroupClass :BaseEntity
     {
         public string Name { get; set; }
     }

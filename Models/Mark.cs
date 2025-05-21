@@ -2,7 +2,7 @@
 
 namespace SchoolManagement.Models
 {
-    public class Marks :BaseEntity
+    public class Mark :BaseEntity
     {   
         public int StudentId { get; set; }
         public Student Student { get; set; }      
